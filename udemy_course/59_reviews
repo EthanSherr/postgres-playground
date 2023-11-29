@@ -1,0 +1,27 @@
+create table
+    reviews (
+        id serial primary key,
+        rating integer,
+        reviewer_id integer references authors (id),
+        book_id integer references books (id)
+    );
+
+insert into
+    reviews (rating, reviewer_id, book_id)
+values
+    (3, 1, 2),
+    (4, 2, 1),
+    (5, 3, 3);
+
+-- return book title and name of author, rating of review
+-- only show rows where author of book is author of review;
+select
+    title,
+    name,
+    rating,
+    books.author_id as book_author_id,
+    reviews.reviewer_id as review_author_id
+from
+    books
+    inner join authors on authors.id = books.author_id
+    inner join reviews on reviews.reviewer_id = books.author_id;
