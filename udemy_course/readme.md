@@ -9,3 +9,6 @@ progress:
 [10-5-2023](https://www.udemy.com/course/sql-and-postgresql/learn/quiz/4987192#overview)
 [10-10-2023](https://www.udemy.com/course/sql-and-postgresql/learn/lecture/21629748#overview)
 [10-13-2023](https://www.udemy.com/course/sql-and-postgresql/learn/lecture/22801959?start=0#content)
+[11-11-2023](https://www.udemy.com/course/sql-and-postgresql/learn/lecture/22802069#overview)
+[12-16-2023](https://www.udemy.com/course/sql-and-postgresql/learn/lecture/22802101#overview)
+
