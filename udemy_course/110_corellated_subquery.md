@@ -24,3 +24,15 @@ INNER JOIN  (SELECT department, MAX(price) as max_price
     GROUP by department
 ) as q ON q.max_price = products.price AND q.department = products.department
 ```
+
+
+```sql
+SELECT name, department, price
+FROM products AS p1
+WHERE p1.price = (
+    SELECT MAX(p2.price)
+    FROM products AS p2
+    WHERE p2.department = p1.department
+)
+
+```
